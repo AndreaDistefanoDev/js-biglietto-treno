@@ -14,13 +14,15 @@ const priceKm = distance * 0.21;
 let price;
 
 if (age < 18){
-    price = priceKm * 0.20
+    price = priceKm * 0.20   
+
 } else if (age >= 65){
     price = priceKm * 0.40
 }
 
 const finalPrice = priceKm - price;
-console.log(finalPrice);
-document.getElementById("output").innerHTML = finalPrice;
+console.log(finalPrice.toFixed(2));
+
+
 
 
