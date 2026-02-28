@@ -19,7 +19,8 @@ if (age < 18){
     price = priceKm * 0.40
 }
 
-const finalPrice = priceKm - price
+const finalPrice = priceKm - price;
 console.log(finalPrice);
+document.getElementById("output").innerHTML = finalPrice;
 
 
